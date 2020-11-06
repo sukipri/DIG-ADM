@@ -15,6 +15,6 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Pengumuman</a>
       </li>
-     
+     </ul>
   </div>
 </nav>
