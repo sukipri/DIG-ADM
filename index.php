@@ -1,1 +1,1 @@
-<?php header("location:DIGADM/index.php"); //->Note Direct to index Main Portal ?>
+<?php header("location:DIGADM/index1.php"); //->Note Direct to index Main Portal ?>
