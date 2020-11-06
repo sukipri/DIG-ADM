@@ -1,0 +1,1 @@
+<?php header("location:DIGADM/index.php"); //->Note Direct to index Main Portal ?>
