@@ -13,15 +13,15 @@
     <link rel="icon" href="http://www.pantiwilasa-citarum.co.id/WEB-PWC/OPT-03/IMG/LOGO/logo_new.png">
 
     <!-- CSS -->
-        <link href="<?php echo"http://$MY_HOST/E-CONF/LAYOUT/CSS/CSS_SENDSTONE.css"; ?>" rel="stylesheet" type="text/css" />
-        <link href="<?php echo"http://$MY_HOST/E-CONF/LAYOUT/CSS/NA-MIX-01.css"; ?>" rel="stylesheet" type="text/css" />
+        <link href="<?php echo"http://$MY_HOST/DIG-ADM/LAYOUT/CSS/CSS_LUX.css"; ?>" rel="stylesheet" type="text/css" />
+        <link href="<?php echo"http://$MY_HOST/DIG-ADM/LAYOUT/CSS/NA-MIX-01.css"; ?>" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <!-- --JS -->
          <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
          <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-         <script src="<?php echo"http://$MY_HOST/E-CONF/LAYOUT/JS/JS_ANGULAR.js"; ?>"></script>
-         <script src="<?php echo"http://$MY_HOST/E-CONF/LAYOUT/JS/JS_BOOTSTRAP.js"; ?>"></script>
-          <script src="<?php echo"http://$MY_HOST/E-CONF/LAYOUT/JS/JS_01.js"; ?>"></script> 
+         <script src="<?php echo"http://$MY_HOST/DIG-ADM/LAYOUT/JS/JS_ANGULAR.js"; ?>"></script>
+         <script src="<?php echo"http://$MY_HOST/DIG-ADM/LAYOUT/JS/JS_BOOTSTRAP.js"; ?>"></script>
+          <script src="<?php echo"http://$MY_HOST/DIG-ADM/LAYOUT/JS/JS_01.js"; ?>"></script> 
          <!-- <script src="<?php //echo"http://$MY_HOST/NA-MIX-01/LAYOUT/JS/JS_02.js"; ?>"></script> -->
          <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
