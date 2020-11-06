@@ -1,4 +1,4 @@
-    <title>E-CONFERENCE</title>
+    <title>DIG-ADM</title>
 <?php
         /* Himpunan INCLUDER */
 		    include"../DIST/CFG/CFG_01.php";
