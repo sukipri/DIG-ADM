@@ -1,12 +1,15 @@
 <?php
 	/*------------------*/
-	/*ALGORITHM E-CONF*/
+	/*ALGORITHM pseudocode DIG-ADM*/
 	/*------------------*/
 
 ?>
 
 	<?php 
-			/*Algoritma PEndaftaran Peserta */
+		/*Algoritma & multifungsi Menu Kode data */
+					
+
+
 			
 			
 		
