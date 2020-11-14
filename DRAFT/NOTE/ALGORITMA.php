@@ -13,6 +13,12 @@
 				  1.2 entri penamaan kode
 				]
 			2. Proses simpan()
+					
+					/*---Table Assesment--*/
+							NAME //>> da_kode_01
+												[
+				
+												]
 				
 			/*   
 			  pemufungsian kode data , untuk menjadi master atau penggolongan(flag) saat melakukan
