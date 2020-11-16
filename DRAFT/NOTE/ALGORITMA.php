@@ -20,6 +20,7 @@
 													idmain_kode_01
 													kode_kode_01
 													kode_ket_01
+													kode_tglinput_01
 													kode_uploader
 												]
 				
