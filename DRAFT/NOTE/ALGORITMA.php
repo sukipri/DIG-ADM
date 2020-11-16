@@ -17,7 +17,10 @@
 					/*---Table Assesment--*/
 							NAME //>> da_kode_01
 												[
-				
+													idmain_kode_01
+													kode_kode_01
+													kode_ket_01
+													kode_uploader
 												]
 				
 			/*   
