@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-default">
-  <a class="navbar-brand" href="?" style="color:#000;">DIG-ADM - [Digital Administration]</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top">
+  <a class="navbar-brand" href="?">DIG-ADM - [Digital Administration]</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -11,5 +11,8 @@
       </li>
   		
      </ul>
+     <a href="../LOGIC/ACS/ACS_LOGOUT.php" class="btn btn-danger btn-sm"><i class="fas fa-power-off"></i>&nbsp;LOG OUT</a>
   </div>
 </nav>
+
+<div style="padding-top:5.6rem;"></div>

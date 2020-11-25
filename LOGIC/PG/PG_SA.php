@@ -4,10 +4,17 @@
      
   
         /*--------------------------*/
-                /* E-CHECK */
+                /* DIG-ADM*/
         /*---------------------------*/
 
-                //PEDF PESERTA
+            //MASTER
+                case'DA_KODE_01':
+                    include"DIGADM/DA_KODE_01.php";
+                break;
+            //BARANG
+             case'DA_BRG_01':
+                include"DIGADM/DA_BRG_01.php";
+             break;
               
     }
 ?>
