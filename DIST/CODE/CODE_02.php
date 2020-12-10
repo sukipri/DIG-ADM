@@ -24,12 +24,26 @@
               $da_hit_zero_vkd01_cq = sprintf("%02d", $da_hit_vkd01_cq);
               @$da_cq_vkd01_sw = "KD$DATE_ymd-$da_hit_zero_vkd01_cq"; 
 
+              /* da_unit_satuan_01 */
+              $da_cn_vunit01_sw = $CL_Q($CONN01,"$SL unit_kode_01 FROM da_unit_satuan_01 ");
+              $da_nr_vunit01_cq = $CL_NR($da_cn_vunit01_sw);
+              $da_hit_vunit01_cq = $da_nr_vunit01_cq + 1;
+              $da_hit_zero_vunit01_cq = sprintf("%02d", $da_hit_vunit01_cq);
+              @$da_cq_vunit01_sw = "UNT$DATE_ymd-$da_hit_zero_vunit01_cq"; 
+
               /* da_kat_barang_01*/
               $da_cn_vkbrg01_sw = $CL_Q($CONN01,"$SL kat_kode_01 FROM da_kat_barang_01 ");
               $da_nr_vkbrg01_cq = $CL_NR($da_cn_vkbrg01_sw);
               $da_hit_vkbrg01_cq = $da_nr_vkbrg01_cq + 1;
               $da_hit_zero_vkbrg01_cq = sprintf("%02d", $da_hit_vkbrg01_cq);
               @$da_cq_vkbrg01_sw = "KBRG$DATE_ymd-$da_hit_zero_vkbrg01_cq"; 
+
+              /* da_barang_01*/
+              $da_cn_vbrg01_sw = $CL_Q($CONN01,"$SL barang_kode_01 FROM da_barang_01 ");
+              $da_nr_vbrg01_cq = $CL_NR($da_cn_vbrg01_sw);
+              $da_hit_vbrg01_cq = $da_nr_vbrg01_cq + 1;
+              $da_hit_zero_vbrg01_cq = sprintf("%02d", $da_hit_vbrg01_cq);
+              @$da_cq_vbrg01_sw = "BRG$DATE_ymd-$da_hit_zero_vbrg01_cq"; 
 
 
 

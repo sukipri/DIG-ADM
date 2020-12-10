@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 25, 2020 at 08:01 AM
+-- Generation Time: Dec 10, 2020 at 08:08 AM
 -- Server version: 5.5.16
 -- PHP Version: 5.3.8
 
@@ -19,6 +19,34 @@ SET time_zone = "+00:00";
 --
 -- Database: `digadm`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `da_barang_01`
+--
+
+CREATE TABLE IF NOT EXISTS `da_barang_01` (
+  `idmain_barang_01` varchar(100) NOT NULL,
+  `idmain_kode_01` varchar(100) NOT NULL,
+  `idmain_kat_barang_01` varchar(100) NOT NULL,
+  `idmain_unit_satuan_01` varchar(100) NOT NULL,
+  `barang_kode_01` varchar(100) NOT NULL,
+  `barang_nama_01` varchar(100) NOT NULL,
+  `barang_jml01_01` varchar(100) NOT NULL,
+  `barang_jml02_01` varchar(100) NOT NULL,
+  `barang_ket_01` varchar(100) NOT NULL,
+  `barang_status_01` varchar(10) NOT NULL,
+  `barang_uploader` varchar(100) NOT NULL,
+  PRIMARY KEY (`idmain_barang_01`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `da_barang_01`
+--
+
+INSERT INTO `da_barang_01` (`idmain_barang_01`, `idmain_kode_01`, `idmain_kat_barang_01`, `idmain_unit_satuan_01`, `barang_kode_01`, `barang_nama_01`, `barang_jml01_01`, `barang_jml02_01`, `barang_ket_01`, `barang_status_01`, `barang_uploader`) VALUES
+('OTY3NjMx201210061245', 'OTMxNDg4201125022511', 'OTEwODUy201125065821', 'OTA4NjM4201209061904', 'BRG201210-01', 'AKA MITOL', '2000', '', '-', '', '');
 
 -- --------------------------------------------------------
 
@@ -63,6 +91,7 @@ CREATE TABLE IF NOT EXISTS `da_kode_01` (
 --
 
 INSERT INTO `da_kode_01` (`idmain_kode_01`, `kode_kode_01`, `kode_ket_01`, `kode_tglinput_01`, `kode_uploader`) VALUES
+('OTcwMzU3201209043437', 'KDUNT01', 'Unit satuan', '2020-12-09 04:34:37', 'hg0t340jfg'),
 ('OTgzOTYx201125023208', 'KKBRG1001', 'Kode Kategori barang', '2020-11-25 02:32:08', 'hg0t340jfg'),
 ('OTMxNDg4201125022511', 'KBRG1001', 'Kode Barang Baru', '2020-11-25 02:25:11', 'hg0t340jfg');
 
@@ -91,6 +120,28 @@ INSERT INTO `da_qa_01` (`idmain_qa_01`, `qa_kode`, `qa_01`, `qa_02`, `ket`, `sta
 ('QA848ug9rgu95u45ugt9tu4tj', 'QA1001', '4 X 4', '16', '-', '2', 'TEST'),
 ('QA8sdfsf3we4t4', 'QA1003', '8 X 8', '64', '-', '2', 'TEST'),
 ('QAsdf70sudf0sduf0sduf0s', 'QA1002', '10 : 2', '5', '-', '2', 'TEST');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `da_unit_satuan_01`
+--
+
+CREATE TABLE IF NOT EXISTS `da_unit_satuan_01` (
+  `idmain_unit_satuan_01` varchar(50) NOT NULL,
+  `idmain_kode_01` varchar(50) NOT NULL,
+  `unit_kode_01` varchar(50) NOT NULL,
+  `unit_nama_01` varchar(50) NOT NULL,
+  PRIMARY KEY (`idmain_unit_satuan_01`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `da_unit_satuan_01`
+--
+
+INSERT INTO `da_unit_satuan_01` (`idmain_unit_satuan_01`, `idmain_kode_01`, `unit_kode_01`, `unit_nama_01`) VALUES
+('OTA4NjM4201209061904', 'OTgzOTYx201125023208', 'CM', 'Centimeter'),
+('OTc4Mjc1201210070056', 'OTcwMzU3201209043437', 'M', 'Meter');
 
 -- --------------------------------------------------------
 
