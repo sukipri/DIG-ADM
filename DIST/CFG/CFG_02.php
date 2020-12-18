@@ -10,7 +10,7 @@
    
 <!-- LIBRARY CSS DAN JS-->
     <!-- -->
-    <link rel="icon" href="../IMG/ICON/image-32.png">
+    <link rel="icon" href="../IMG/ICON/favicon.png">
 
     <!-- CSS -->
         <link href="<?php echo"http://$MY_HOST/DIG-ADM/LAYOUT/CSS/CSS_LUX.css"; ?>" rel="stylesheet" type="text/css" />

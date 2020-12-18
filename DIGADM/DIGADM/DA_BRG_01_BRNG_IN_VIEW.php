@@ -30,29 +30,31 @@
 		  ?>
           <tr>
             <td><?PHP echo"$da_barang_no"; ?></td>
-            <td><?PHP echo"<a href=#>$da_vbrg01_sww[barang_kode_01]</a>"; ?></td>
+            <td><?PHP echo"<a href=?PG_SA=DA_BRG_01&PG_SA_SUB=DA_BRG_01_BRNG_UP&IDBRG01=$da_vbrg01_sww[idmain_barang_01]>$da_vbrg01_sww[barang_kode_01]</a>"; ?></td>
             <td><?PHP echo"$da_vbrg01_sww[barang_nama_01] << $da_vkbrg01_sww[kat_nama_01] >>  "; ?></td>
             <td><?PHP echo"$da_vbrg01_sww[barang_jml01_01] / $da_vunit01_sww[unit_nama_01]"; ?>
+            <br>
             		<?PHP 
 						//-Konversi Data-//
-						$hit_vbrg01_sw = $da_vbrg01_sww['barang_jml01_01'] -  $da_vbrg01_sww['barang_jml02_01'];
+						$hit_vbrg01_sw = $da_vbrg01_sww['barang_jml03_01'] -  $da_vbrg01_sww['barang_jml02_01'];
+						$hit_dis80 = 80/100;
+						$hit_vbrg01_sw02 = $da_vbrg01_sww['barang_jml01_01'] * $hit_dis80; 
 							//-PENG KONDISIAN--//
-								if($hit_vbrg01_sw < $da_vbrg01_sww['barang_jml01_01']){	
-								
 					?>
-                    		<i class="fas fa-battery-half"></i>-
-                    <?PHP }elseif($hit_vbrg01_sw > $da_vbrg01_sww['barang_jml01_01']){ ?>
-                    <i class="fas fa-battery-full"></i>--
+                    		<?PHP if($hit_vbrg01_sw > $hit_vbrg01_sw02 ){ 	 ?>
+							  <<  <i class="fas fa-battery-full"></i> <?PHP echo"$hit_vbrg01_sw"; ?> >>
+                            
+                		    <?PHP }elseif($hit_vbrg01_sw  < $hit_vbrg01_sw02){ //echo"$hit_vbrg01_sw"; ?>
+                   		 << <i class="fas fa-battery-half"></i> <?PHP echo"$hit_vbrg01_sw"; ?> >>
+                         
+                         <?PHP } ?>
                     
-                    <?PHP } ?>
+                    
             </td>
             <td>&nbsp;</td>
           </tr>
+         	<?PHP $da_barang_no++; } ?>
 	    </table>
-		<?PHP $da_barang_no++; } ?>
-        
-        </form>
-        
-        
+		</form>
         </body>
 <?PHP } ?>

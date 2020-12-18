@@ -36,6 +36,7 @@
             <div class="dropdown-menu">
               <a class="dropdown-item" href="<?PHP echo"?PG_SA=DA_BRG_01&PG_SA_SUB=DA_BRG_01_BRNG_IN"; ?>">ENTR!</a>
               <a class="dropdown-item" href="<?PHP echo"?PG_SA=DA_BRG_01&PG_SA_SUB=DA_BRG_01_BRNG_IN_VIEW"; ?>">Manage Barang</a>
+               <a class="dropdown-item" href="<?PHP echo"?PG_SA=DA_BRG_01&PG_SA_SUB=DA_BRG_01_BRNG_QTY_VIEW"; ?>">Riwayat Penggunaan Barang</a>
             
             </div>
           </li>
