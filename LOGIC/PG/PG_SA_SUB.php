@@ -69,6 +69,13 @@
                     case'DA_USER_01_USR_IN':
                         include"DIGADM/DA_USER_01_USR_IN.php";
                     break;
+                    case'DA_USER_01_USR_UP':
+                        include"DIGADM/DA_USER_01_USR_UP.php";
+                    break;
+                    case'DA_USER_01_USR_VIEW':
+                        include"DIGADM/DA_USER_01_USR_VIEW.php";
+                    break;
+
                     
         /* APP */
             //POS (Point Of Sales)

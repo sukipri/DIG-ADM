@@ -15,6 +15,7 @@
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">User</a>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="<?PHP echo"?PG_SA=DA_USER_01&PG_SA_SUB=DA_USER_01_USR_IN"; ?>">ENTR! User</a>
+              <a class="dropdown-item" href="<?PHP echo"?PG_SA=DA_USER_01&PG_SA_SUB=DA_USER_01_USR_VIEW"; ?>">Manage User</a>
 		  </div>
           </li>
   </ul>

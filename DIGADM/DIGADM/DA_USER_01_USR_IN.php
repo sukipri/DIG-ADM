@@ -28,7 +28,7 @@
                 <br>
                 
                 <b>#Nama User</b>
-                <input type="text" name="da_user_nama_01" class="form-control form-control-sm" required autocomplete="off">
+                <input type="text"  name="da_user_namaasli_01" class="form-control form-control-sm" required autocomplete="off">
                 <br>
                 
                 <b>#Password</b>

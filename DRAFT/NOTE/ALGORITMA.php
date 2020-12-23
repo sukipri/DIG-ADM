@@ -288,7 +288,8 @@
 							(Untuk Melakukan transaksi baru pembelian)
 						1. ENTRI PROSEDURE TRAKSAKSI
 								[
-									1.1 GET BARANG(da_barang_01)
+									1.1. GET NOTA()
+									1.2 GET BARANG(da_barang_01)
 										[
 											GET Harga BARANG(da_jual_barang_harga_01)
 											SHOW Panjang
@@ -300,7 +301,25 @@
 										]
 										
 								]
-				
+						
+						/*---Table Assesment--*/
+							NAME //>> da_jual_barang_nota_01
+								[
+									idmain_jual_barang_nota_01
+									idmain_kode_01
+									idmain_user_01
+									nota_kode_01
+									nota_nama_01
+									nota_jenis_01
+									nota_ket_01
+									nota_tglinput_01
+									nota_uploader
+									
+									
+								]
+								
+						
+						
 						/*---Table Assesment--*/
 							NAME //>> da_jual_barang_beli_01
 								[
@@ -308,14 +327,22 @@
 									idmain_kode_01
 									idmain_barang_01
 									idmain_jual_barang_harga_01
+									idmain_jual_barang_diskon_01
+									idmain_user_01
 									beli_kode_01
+									beli_nom01_01
+									beli_panjang_01
+									beli_lebar_01
+									beli_luas_01
+									beli_tglmasuk_01
+									beli_tglinput_01
 									
-									
-									
-									
-									
+							
 								]
 		--CLOSE--
+		
+	>>||CLOSE PENJUALAN RELATION(APP) -||
+	
 	
 	||-Admin / Customer / Pembeli(MASTER)-||
 				/*ALgorthm * Mutifungsi Admin && Customer */
@@ -360,6 +387,26 @@
 									user_nama_01
 									user_pass_01
 									user_akses_01
+									
+								]
+			
+			//--Update Detail User & Customer--//
+				(Melengkapi profil user Admin Maupun Customer)
+			
+			/*---Table Assesment--*/
+							NAME //>> da_user_dtl_01
+								[
+									idmain_user_dtl_01
+									idmain_user_01
+									dtl_kode_01
+									dtl_nama_01(GET da_user_01:user_nama_01)
+									dtl_alamat_01
+									dtl_telp_01
+									dtl_email_01
+									dtl_ket_01
+									
+									
+									
 									
 								]
 	

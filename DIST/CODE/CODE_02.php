@@ -87,7 +87,7 @@
                 /*DATAVIEW */
                         //VIEW-UPDATE//
                                 /* User */
-                                $IDUSR01 = @$SQL_ESC($CONN01,$_GET['IDUSER01']);
+                                $IDUSR01 = @$SQL_ESC($CONN01,$_GET['IDUSR01']);
                                 $IDAKS01 = @$SQL_ESC($CONN01,$_GET['IDAKS01']);
                                 
                                 /*MASTER - KODE */
@@ -99,6 +99,7 @@
 
                                 /*MASTER - PENJUALAN */
                                 $IDHRG01 = @$SQL_ESC($CONN01,$_GET['IDHRG01']);
+
                 
 /*..View generate data  */
 $da_vqa01_sw = $CL_Q($CONN01,"$CL_SL da_qa_01 order by rand()");

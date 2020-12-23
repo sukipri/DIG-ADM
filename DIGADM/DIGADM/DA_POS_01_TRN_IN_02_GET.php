@@ -9,17 +9,20 @@
 	
 	?>
     <b>#Harga</b>
-	<input type="text" name="da_harga_nom01_01" readonly class="form-control form-control-sm" value="<?PHP echo"$da_vhrg01_sww[harga_nom01_01]"; ?>">
+	<input type="text" style="max-width:20rem;" name="da_harga_nom01_01" readonly class="form-control form-control-sm" value="<?PHP echo"$da_vhrg01_sww[harga_nom01_01]"; ?>">
     <br>
     
     <b>#Panjang</b>
-    <input type="text" class="form-control form-control-sm" autocomplete="off" required>
+    <input type="text" name="beli_panjang_01" class="form-control form-control-sm" autocomplete="off" required>
     <br>
     
     <b>#Lebar</b>
-    <input type="text" class="form-control form-control-sm" autocomplete="off" required>
+    <input type="text" name="beli_lebar_01" class="form-control form-control-sm" autocomplete="off" required>
     <br>
     
+    <b>#Tanggal</b>
+     <input type="date" name="beli_tglmasuk_01" class="form-control form-control-sm" autocomplete="off" required>
+	<br>
     
-
+    
 </body>

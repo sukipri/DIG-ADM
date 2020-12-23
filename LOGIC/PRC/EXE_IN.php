@@ -30,14 +30,14 @@
         if(isset($_POST['da_user_simpan_01'])){
             $da_idmain_kode_01 = @$SQL_ESC($CONN01,$_POST['da_idmain_kode_01']);
             $da_user_kode_01 = @$SQL_ESC($CONN01,$_POST['da_user_kode_01']);
-            $da_user_nama_01 = @str_replace(' ',' ',$SQL_ESC($CONN01,$_POST['da_user_nama_01']));
+            //$da_user_nama_01 = @str_replace(' ',' ',$SQL_ESC($CONN01,$_POST['da_user_nama_01']));
             $da_user_pass_01 = @EN_HS_MD5($SQL_ESC($CONN01,$_POST['da_user_pass_01']));
             $da_user_akses_01 = @$SQL_ESC($CONN01,$_POST['da_user_akses_01']);
+            $da_user_namaasli_01 = @$SQL_ESC($CONN01,$_POST['da_user_namaasli_01']);
 
-                $da_save_user_01 = $CL_Q($CONN01,"$IN da_user_01(idmain_user_01,idmain_kode_01,user_kode_01,user_nama_01,user_pass_01,user_akses_01)VALUES('$IDMAIN','$da_idmain_kode_01','$da_user_kode_01','$da_user_nama_01','$da_user_pass_01','$da_user_akses_01')");
+                $da_save_user_01 = $CL_Q($CONN01,"$IN da_user_01(idmain_user_01,idmain_kode_01,user_kode_01,user_nama_01,user_pass_01,user_akses_01,user_namaasli_01)VALUES('$IDMAIN','$da_idmain_kode_01','$da_user_kode_01','$da_user_kode_01','$da_user_pass_01','$da_user_akses_01','$da_user_namaasli_01')");
             if($da_save_user_01){
-
-                ?>
+    ?>
                   <meta http-equiv="refresh" content="0; url=<?php echo"?PG_SA=DA_USER_01&PG_SA_SUB=DA_USER_01_USR_IN"; ?>">
             <?PHP }else{
                 include"../LAYOUT/NOTIF/NF_SAVE_FAILED.php";

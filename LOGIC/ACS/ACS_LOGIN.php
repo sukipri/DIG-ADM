@@ -23,14 +23,14 @@
 			if($bc > 0){
 				  // session_start(); // di gunakan untuk mengawali perintah session
 					//session_start(); 
-				   $_SESSION['namauser']=$bc[2];  // di gunakan untuk membandingkan variabel session dengan database
-				   $_SESSION['passuser']=$bc[3];
+				   $_SESSION['namauser']=$bc[3];  // di gunakan untuk membandingkan variabel session dengan database
+				   $_SESSION['passuser']=$bc[4];
 					 //header("location:?HLM=H_LOGIN"); 
 					 echo"<b>Success....</b>";
 					echo"$_SESSION[namauser]";
 					echo"$_SESSION[passuser]";
 				?>
-					<META HTTP-EQUIV="Refresh" Content="0; URL=<?php echo"../LOGIC/PG/PG_H_USER.php?IDAKS01=$bc[4]"; ?>">
+					<META HTTP-EQUIV="Refresh" Content="0; URL=<?php echo"../LOGIC/PG/PG_H_USER.php?IDAKS01=$bc[5]"; ?>">
 					<?php exit(); ?>
 					
 				 <?php

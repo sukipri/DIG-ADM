@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 18, 2020 at 08:46 AM
+-- Generation Time: Dec 22, 2020 at 08:19 AM
 -- Server version: 5.5.16
 -- PHP Version: 5.3.8
 
@@ -132,6 +132,25 @@ INSERT INTO `da_jual_barang_harga_01` (`idmain_jual_barang_harga_01`, `idmain_ko
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `da_jual_barang_nota_01`
+--
+
+CREATE TABLE IF NOT EXISTS `da_jual_barang_nota_01` (
+  `idmain_jual_barang_nota_01` varchar(100) NOT NULL,
+  `idmain_kode_01` varchar(100) NOT NULL,
+  `idmain_user_01` varchar(100) NOT NULL,
+  `nota_kode_01` varchar(100) NOT NULL,
+  `nota_nama_01` varchar(100) NOT NULL,
+  `nota_jenis_01` varchar(100) NOT NULL,
+  `nota_tglinput_01` date NOT NULL,
+  `nota_ket_01` text NOT NULL,
+  `nota_uploader` varchar(100) NOT NULL,
+  PRIMARY KEY (`idmain_jual_barang_nota_01`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `da_kat_barang_01`
 --
 
@@ -243,6 +262,7 @@ CREATE TABLE IF NOT EXISTS `da_user_01` (
   `user_nama_01` varchar(100) NOT NULL,
   `user_pass_01` varchar(100) NOT NULL,
   `user_akses_01` varchar(10) NOT NULL,
+  `user_namaasli_01` varchar(100) NOT NULL,
   PRIMARY KEY (`idmain_user_01`),
   KEY `akses` (`user_akses_01`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -251,8 +271,27 @@ CREATE TABLE IF NOT EXISTS `da_user_01` (
 -- Dumping data for table `da_user_01`
 --
 
-INSERT INTO `da_user_01` (`idmain_user_01`, `idmain_kode_01`, `user_kode_01`, `user_nama_01`, `user_pass_01`, `user_akses_01`) VALUES
-('hg0t340jfg04jg30gjg30g', '', 'USR1001', 'sukipri', '0cc175b9c0f1b6a831c399e269772661', 'A1');
+INSERT INTO `da_user_01` (`idmain_user_01`, `idmain_kode_01`, `user_kode_01`, `user_nama_01`, `user_pass_01`, `user_akses_01`, `user_namaasli_01`) VALUES
+('hg0t340jfg04jg30gjg30g', '', 'USR1001', 'sukipri', '0cc175b9c0f1b6a831c399e269772661', 'A1', ''),
+('OTE2OTgy201219032538', 'OTY4ODUy201218052921', 'USR201219-02', 'USR201219-02', '0cc175b9c0f1b6a831c399e269772661', 'C1', 'Agung Gumelar');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `da_user_dtl_01`
+--
+
+CREATE TABLE IF NOT EXISTS `da_user_dtl_01` (
+  `idmain_user_dtl_01` varchar(100) NOT NULL,
+  `idmain_user_01` varchar(100) NOT NULL,
+  `dtl_kode_01` varchar(100) NOT NULL,
+  `dtl_nama_01` varchar(100) NOT NULL,
+  `dtl_alamat_01` text NOT NULL,
+  `dtl_telp_01` varchar(100) NOT NULL,
+  `dtl_email_01` varchar(100) NOT NULL,
+  `dtl_ket_01` text NOT NULL,
+  PRIMARY KEY (`idmain_user_dtl_01`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

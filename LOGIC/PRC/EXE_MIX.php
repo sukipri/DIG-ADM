@@ -10,7 +10,31 @@
     /*-----------------------------------------------------*/
 ?>
 <!-- -->
+<!--  #-USER  RELATION-# -->
+    <?PHP
+        if(isset($_POST['da_user_up_01'])){
+            $da_idmain_kode_01 = @$SQL_ESC($CONN01,$_POST['da_idmain_kode_01']);
+            $da_user_kode_01 = @$SQL_ESC($CONN01,$_POST['da_user_kode_01']);
+            //$da_user_nama_01 = @str_replace(' ',' ',$SQL_ESC($CONN01,$_POST['da_user_nama_01']));
+            $da_user_pass_01 = @EN_HS_MD5($SQL_ESC($CONN01,$_POST['da_user_pass_01']));
+            $da_user_akses_01 = @$SQL_ESC($CONN01,$_POST['da_user_akses_01']);
+            $da_user_namaasli_01 = @$SQL_ESC($CONN01,$_POST['da_user_namaasli_01']);
 
+                    $da_up_user_01 = $CL_Q($CONN01,"$UP da_user_01 set idmain_kode_01='$da_idmain_kode_01',user_nama_01='$da_user_namaasli_01',user_pass_01='$da_user_pass_01',user_akses_01='$da_user_akses_01' WHERE idmain_user_01='$IDUSR01' ");
+            if($da_up_user_01){
+
+                            ?>
+                              <meta http-equiv="refresh" content="0; url=<?php echo"?PG_SA=DA_BRG_01&PG_SA_SUB=DA_BRG_01_BRNG_QTY_IN&IDBRG01=$IDBRG01"; ?>">
+                        <?PHP }else{
+                            include"../LAYOUT/NOTIF/NF_SAVE_FAILED.php";
+                        }
+                }
+        ?>
+
+<!--  #-CLOSE USER RELATION-# -->
+
+
+<!--  #-BARANG RELATION-# -->
 <?PHP
                 /*FORM  UPDATE QTY BARANG*/
                 if(isset($_POST['da_qty_up_01'])){
@@ -34,3 +58,8 @@
                         }
                 }
         ?>
+
+<!--  #-CLOSE BARANG RELATION-# -->
+
+
+
